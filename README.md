@@ -428,7 +428,7 @@ for (int& p : a)
 for (vector<int>::iterator p=a.begin(); p!=a.end(); ++p)
   *p=0;                   // C++03: Set all elements of a to 0
 vector<int> b(a.begin(), a.end());  // b is copy of a
-vector<T> c(n, x);        // c[0]..c[n-1] init to x
+a.assign(5, -10)          // sets the size to 5 and all the element values are -10
 T d[10]; vector<T> e(d, d+10);      // e is initialized from d
 a.clear();              // Erases all elements from the container. Leaves the capacity() of the vector unchanged.
 ```
